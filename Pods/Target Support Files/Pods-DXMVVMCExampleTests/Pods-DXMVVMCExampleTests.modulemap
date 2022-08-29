@@ -1,0 +1,6 @@
+framework module Pods_DXMVVMCExampleTests {
+  umbrella header "Pods-DXMVVMCExampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
