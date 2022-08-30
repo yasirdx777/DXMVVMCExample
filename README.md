@@ -1,6 +1,6 @@
 # DXMVVMCExample
 
-## Demo project demonstrators
+## Demo project demonstrates
 
 - MVVM-C
 - Factory
