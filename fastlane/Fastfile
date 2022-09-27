@@ -31,11 +31,6 @@ def ensure_temp_keychain(name, password)
 end
 
 platform :ios do
-  
-  lane :screenshots do
-    capture_screenshots
-    upload_to_app_store
-  end
 
   lane :closed_beta do
     keychain_name = TEMP_KEYCHAIN_USER
@@ -87,6 +82,8 @@ platform :ios do
       notify_external_testers: false,
       ipa: "./DXMVVMCExample.ipa"
     )
+
+    capture_screenshots
 
     delete_temp_keychain(keychain_name)
   end
