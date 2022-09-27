@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AD220CF28E32C0400676E6D /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD220CE28E32C0400676E6D /* SnapshotHelper.swift */; };
 		0ADFA4AD28BCCB7A008429CF /* DXMVVMCExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4AC28BCCB7A008429CF /* DXMVVMCExampleTests.swift */; };
 		0ADFA4B728BCCB7A008429CF /* DXMVVMCExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4B628BCCB7A008429CF /* DXMVVMCExampleUITests.swift */; };
 		0ADFA4B928BCCB7A008429CF /* DXMVVMCExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4B828BCCB7A008429CF /* DXMVVMCExampleUITestsLaunchTests.swift */; };
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AD220CE28E32C0400676E6D /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		0ADFA49228BCCB78008429CF /* DXMVVMCExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DXMVVMCExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADFA4A328BCCB7A008429CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ADFA4A828BCCB7A008429CF /* DXMVVMCExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DXMVVMCExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +189,7 @@
 		0ADFA4B528BCCB7A008429CF /* DXMVVMCExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
+				0AD220CE28E32C0400676E6D /* SnapshotHelper.swift */,
 				0ADFA4B628BCCB7A008429CF /* DXMVVMCExampleUITests.swift */,
 				0ADFA4B828BCCB7A008429CF /* DXMVVMCExampleUITestsLaunchTests.swift */,
 			);
@@ -688,6 +691,7 @@
 			files = (
 				0ADFA4B728BCCB7A008429CF /* DXMVVMCExampleUITests.swift in Sources */,
 				0ADFA4B928BCCB7A008429CF /* DXMVVMCExampleUITestsLaunchTests.swift in Sources */,
+				0AD220CF28E32C0400676E6D /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
