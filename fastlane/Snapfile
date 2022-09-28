@@ -1,11 +1,12 @@
 devices([
-  "iPhone 8 Plus",
-  "iPhone 13 Pro Max",
-  "iPad Pro (12.9-inch) (5th generation)"
+   "iPhone 8 Plus",
+   "iPhone 13 Pro Max",
+   "iPad Pro (12.9-inch) (2nd generation)",
+   "iPad Pro (12.9-inch) (5th generation)"
 ])
 
 languages([
-  "en-US",
+   "en-US"
 ])
 
 scheme("DXMVVMCExampleUITests")
