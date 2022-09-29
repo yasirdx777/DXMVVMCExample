@@ -73,29 +73,27 @@ platform :ios do
       }
     )
 
-    # capture_screenshots
-
-    deliver(
-      api_key: api_key,
-      ipa: "./DXMVVMCExample.ipa",
-      metadata_path: "./metadata",
-      screenshots_path: "./screenshots",
-      submit_for_review: true,
-      automatic_release: true,
-      force: true
+    pilot(
+      apple_id: "#{DEVELOPER_APP_ID}",
+      app_identifier: "#{DEVELOPER_APP_IDENTIFIER}",
+      skip_waiting_for_build_processing: true,
+      skip_submission: true,
+      distribute_external: false,
+      notify_external_testers: false,
+      ipa: "./DXMVVMCExample.ipa"
     )
 
-    # pilot(
-    #   apple_id: "#{DEVELOPER_APP_ID}",
-    #   app_identifier: "#{DEVELOPER_APP_IDENTIFIER}",
-    #   skip_waiting_for_build_processing: true,
-    #   skip_submission: true,
-    #   distribute_external: false,
-    #   notify_external_testers: false,
-    #   ipa: "./DXMVVMCExample.ipa"
-    # )
+    capture_screenshots
 
-    
+    deliver(
+      app_identifier: "#{DEVELOPER_APP_IDENTIFIER}",
+      force: true,
+      skip_metadata: false,
+      skip_screenshots: false,
+      skip_binary_upload: true,
+      metadata_path: "./metadata",
+      screenshots_path: "./screenshots",
+    )
 
     delete_temp_keychain(keychain_name)
   end
