@@ -78,8 +78,8 @@ platform :ios do
     deliver(
       api_key: api_key,
       ipa: "./DXMVVMCExample.ipa",
-      metadata_path: "./metadata"
-      screenshots_path: "./screenshots"
+      metadata_path: "./metadata",
+      screenshots_path: "./screenshots",
       submit_for_review: true,
       automatic_release: true,
       force: true
