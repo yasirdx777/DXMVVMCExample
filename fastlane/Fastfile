@@ -90,9 +90,11 @@ platform :ios do
       force: true,
       skip_metadata: false,
       skip_screenshots: false,
-      skip_binary_upload: true,
+      #skip_binary_upload: true,
+      automatic_release: true,
       metadata_path: "./metadata",
       screenshots_path: "./screenshots",
+      ipa: "./DXMVVMCExample.ipa"
     )
 
     delete_temp_keychain(keychain_name)
