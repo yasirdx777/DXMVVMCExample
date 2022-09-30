@@ -9,17 +9,17 @@ on:
 
 jobs:
   deploy:
-    name: Deploying to Testflight
+    name: Deploy prod
     runs-on: macOS-latest
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v1
 
-      - name: Deploy iOS Beta to TestFlight via Fastlane
+      - name: Deploy prod via Fastlane
         uses: maierj/fastlane-action@v1.4.0
         with:
-          lane: closed_beta
+          lane: submit_prod
         env:
           APP_STORE_CONNECT_TEAM_ID: '${{ secrets.APP_STORE_CONNECT_TEAM_ID }}'
           DEVELOPER_APP_ID: '${{ secrets.DEVELOPER_APP_ID }}'

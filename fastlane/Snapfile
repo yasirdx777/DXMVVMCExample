@@ -1,7 +1,7 @@
 devices([
-    "iPhone 8 Plus"
-    # "iPhone 13 Pro Max",
-    # "iPad Pro (12.9-inch) (5th generation)"
+    "iPhone 8 Plus",
+    "iPhone 13 Pro Max",
+    "iPad Pro (12.9-inch) (5th generation)"
 ])
 
 languages([
@@ -11,5 +11,5 @@ languages([
 scheme("DXMVVMCExampleUITests")
 
 clear_previous_screenshots(true)
-#override_status_bar(true)
+override_status_bar(true)
 

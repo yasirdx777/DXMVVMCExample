@@ -32,7 +32,7 @@ end
 
 platform :ios do
 
-  lane :closed_beta do
+  lane :submit_prod do
     keychain_name = TEMP_KEYCHAIN_USER
     keychain_password = TEMP_KEYCHAIN_PASSWORD
     ensure_temp_keychain(keychain_name, keychain_password)
@@ -61,6 +61,8 @@ platform :ios do
       api_key: api_key
     )
 
+    scan(scheme: "DXMVVMCExample")
+
     gym(
       configuration: "Release",
       workspace: "DXMVVMCExample.xcworkspace",
@@ -73,6 +75,25 @@ platform :ios do
       }
     )
 
+    capture_screenshots
+
+    frame_screenshots(
+      use_platform: "IOS"
+    )
+
+    deliver(
+      app_identifier: "#{DEVELOPER_APP_IDENTIFIER}",
+      force: true,
+      precheck_include_in_app_purchases: false,
+      skip_metadata: false,
+      skip_screenshots: false,
+      submit_for_review: true,
+      automatic_release: true,
+      metadata_path: "./metadata",
+      screenshots_path: "./screenshots",
+      ipa: "./DXMVVMCExample.ipa"
+    )
+
     # pilot(
     #   apple_id: "#{DEVELOPER_APP_ID}",
     #   app_identifier: "#{DEVELOPER_APP_IDENTIFIER}",
@@ -82,20 +103,6 @@ platform :ios do
     #   notify_external_testers: false,
     #   ipa: "./DXMVVMCExample.ipa"
     # )
-
-    capture_screenshots
-
-    deliver(
-      app_identifier: "#{DEVELOPER_APP_IDENTIFIER}",
-      force: true,
-      skip_metadata: false,
-      skip_screenshots: false,
-      #skip_binary_upload: true,
-      automatic_release: true,
-      metadata_path: "./metadata",
-      screenshots_path: "./screenshots",
-      ipa: "./DXMVVMCExample.ipa"
-    )
 
     delete_temp_keychain(keychain_name)
   end
