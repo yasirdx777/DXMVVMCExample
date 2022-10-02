@@ -61,7 +61,7 @@ platform :ios do
       api_key: api_key
     )
 
-    scan(scheme: "DXMVVMCExample")
+    # scan(scheme: "DXMVVMCExample")
 
     gym(
       configuration: "Release",
@@ -75,11 +75,12 @@ platform :ios do
       }
     )
 
-    capture_screenshots
+    #capture_screenshots
 
-    frame_screenshots(
-      use_platform: "IOS"
-    )
+    # frame_screenshots(
+    #   use_platform: "IOS",
+    #   path: "./fastlane/screenshots"
+    # )
 
     deliver(
       app_identifier: "#{DEVELOPER_APP_IDENTIFIER}",
