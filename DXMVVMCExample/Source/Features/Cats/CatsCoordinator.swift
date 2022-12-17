@@ -1,15 +1,14 @@
 //
-//  FirstCoordinator.swift
-//  MVVM-C Tutorial
+//  CatViewCoordinator.swift
+//  DXMVVMCExample
 //
-//  Created by Alexandre Quiblier on 19/11/2019.
-//  Copyright © 2019 Alexandre Quiblier. All rights reserved.
+//  Created by iq on 12/12/22.
 //
 
 import UIKit
 
-final class DogsCoordinator: NSObject, Coordinator, UINavigationControllerDelegate  {
-    
+
+final class CatsCoordinator: NSObject, Coordinator, UINavigationControllerDelegate  {
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     
@@ -19,8 +18,8 @@ final class DogsCoordinator: NSObject, Coordinator, UINavigationControllerDelega
     
     func start() {
         let ne: NetworkEngineProtocol = NetworkEngine()
-        let vm = DogsViewModel(coordinator: self, networkEngine: ne)
-        let vc = DogsViewController(viewModel: vm)
+        let vm = CatsViewModel(coordinator: self, networkEngine: ne)
+        let vc = CatsViewController(viewModel: vm)
         vc.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: Int.random(in: 0...1000))
         
         navigationController.pushViewController(vc, animated: true)
@@ -30,7 +29,7 @@ final class DogsCoordinator: NSObject, Coordinator, UINavigationControllerDelega
         guard let fromViewController = navigationController.transitionCoordinator?.viewController (forKey: .from) else { return }
         
         if navigationController.viewControllers.contains(fromViewController) { return }
-        if let catsViewController = fromViewController as? DogsViewController {
+        if let catsViewController = fromViewController as? CatsViewController {
             childDidFinish(catsViewController.viewModel.coordinator)
         }
     }
@@ -47,13 +46,12 @@ final class DogsCoordinator: NSObject, Coordinator, UINavigationControllerDelega
     
 }
 
-extension DogsCoordinator {
-    func nextDogsView() {
+extension CatsCoordinator {
+    func nextCatView() {
         let ne: NetworkEngineProtocol = NetworkEngine()
-        let vm = DogsViewModel(coordinator: self, networkEngine: ne)
-        let vc = DogsViewController(viewModel: vm)
+        let vm = CatsViewModel(coordinator: self, networkEngine: ne)
+        let vc = CatsViewController(viewModel: vm)
         
         navigationController.pushViewController(vc, animated: true)
     }
-    
 }

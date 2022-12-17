@@ -12,12 +12,12 @@ import RxSwift
 import RxCocoa
 
 
-class CatsViewModel {
+final class CatsViewModel {
     
     private var networkEngine: NetworkEngineProtocol
-    private var coordinator: RootCoordinator
+    var coordinator: CatsCoordinator
     
-    init(coordinator: RootCoordinator, networkEngine: NetworkEngineProtocol) {
+    init(coordinator: CatsCoordinator, networkEngine: NetworkEngineProtocol) {
         self.coordinator = coordinator
         self.networkEngine = networkEngine
     }
@@ -38,7 +38,10 @@ class CatsViewModel {
         return _failure.asDriver()
     }
     
-
+    
+    func nextCatsView() {
+        coordinator.nextCatView()
+    }
     
     func fetchData(){
         

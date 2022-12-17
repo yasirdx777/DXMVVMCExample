@@ -7,24 +7,44 @@
 //
 
 import Foundation
+import UIKit
+import RxSwift
+import RxCocoa
 
-protocol DogsViewModelProtocol {
-    var view: DogsViewProtocol? { get set }
+final class DogsViewModel {
     
-    func viewDidLoad()
-}
-
-
-final class DogsViewModel: DogsViewModelProtocol{
-    weak var view: DogsViewProtocol?
+    private var networkEngine: NetworkEngineProtocol
+    var coordinator: DogsCoordinator
     
-    func viewDidLoad() {
-        getData()
+    init(coordinator: DogsCoordinator, networkEngine: NetworkEngineProtocol) {
+        self.coordinator = coordinator
+        self.networkEngine = networkEngine
     }
     
-    private func getData(){
-        view?.showLoadingIndicator()
+    private let _success = BehaviorRelay<[UITableViewDataSource]>(value: [])
+    private let _loading = BehaviorRelay<Bool>(value: false)
+    private let _failure = BehaviorRelay<String?>(value: nil)
+    
+    var success: Driver<[UITableViewDataSource]> {
+        return _success.asDriver()
+    }
+    
+    var loading: Driver<Bool> {
+        return _loading.asDriver()
+    }
+    
+    var failure: Driver<String?> {
+        return _failure.asDriver()
+    }
+    
+    
+    func nextDogsView() {
+        coordinator.nextDogsView()
+    }
+    
+    func fetchData(){
         
+        _loading.accept(true)
         
         var dogsListDataSource:DogsListDataSource!
         var puppiesListDataSource:PuppiesListDataSource!
@@ -35,7 +55,7 @@ final class DogsViewModel: DogsViewModelProtocol{
         
         urlDownloadGroup.enter()
         
-        NetworkEngine().request(endpoint: GalleryEndpoint.getData(query: "Dogs")) { (result: Result<APIResponse, NetworkEngineError>)  in
+        networkEngine.request(endpoint: GalleryEndpoint.getData(query: "Dogs")) { (result: Result<APIResponse, NetworkEngineError>)  in
             switch result {
             case .success(let dogsResponse):
                 dogsListDataSource = DogsListDataSource(posts: dogsResponse.results)
@@ -44,14 +64,14 @@ final class DogsViewModel: DogsViewModelProtocol{
             }
         }
         
-        
-        NetworkEngine().request(endpoint: GalleryEndpoint.getData(query: "Puppies")) { (result: Result<APIResponse, NetworkEngineError>)  in
+        networkEngine.request(endpoint: GalleryEndpoint.getData(query: "Puppies")) { (result: Result<APIResponse, NetworkEngineError>)  in
             switch result {
             case .success(let puppiesResponse):
                 puppiesListDataSource = PuppiesListDataSource(posts: puppiesResponse.results)
             case .failure(let error):
                 networkEngineError = error
             }
+            
             urlDownloadQueue.async {
                 urlDownloadGroup.leave()
             }
@@ -59,14 +79,15 @@ final class DogsViewModel: DogsViewModelProtocol{
         
         urlDownloadGroup.notify(queue: DispatchQueue.global()) { [weak self]  in
             DispatchQueue.main.async {
+                self?._loading.accept(false)
                 if let error = networkEngineError {
-                    self?.view?.showError(error: error)
+                    self?._failure.accept(error.localizedDescription)
                 }else{
-                    self?.view?.hideLoadingIndicator()
-                    self?.view?.updateDataSource(dataSources: [dogsListDataSource, puppiesListDataSource])
-                    self?.view?.reloadListData()
+                    self?._success.accept([dogsListDataSource, puppiesListDataSource])
                 }
             }
         }
     }
+    
+   
 }

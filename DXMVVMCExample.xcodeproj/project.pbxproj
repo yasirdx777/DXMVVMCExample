@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4CF18C2947118E003B85DB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4CF18B2947118E003B85DB /* Coordinator.swift */; };
+		0A4CF1902947320D003B85DB /* CatsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4CF18F2947320D003B85DB /* CatsCoordinator.swift */; };
+		0A7C9553294764020045EBAA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C9552294764020045EBAA /* TabBarController.swift */; };
 		0AD220CF28E32C0400676E6D /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD220CE28E32C0400676E6D /* SnapshotHelper.swift */; };
 		0ADFA4AD28BCCB7A008429CF /* DXMVVMCExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4AC28BCCB7A008429CF /* DXMVVMCExampleTests.swift */; };
 		0ADFA4B728BCCB7A008429CF /* DXMVVMCExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4B628BCCB7A008429CF /* DXMVVMCExampleUITests.swift */; };
@@ -15,11 +18,6 @@
 		0ADFA4F428BCCBC7008429CF /* GalleryEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4C928BCCBC7008429CF /* GalleryEndpoint.swift */; };
 		0ADFA4F528BCCBC7008429CF /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4CA28BCCBC7008429CF /* NetworkEngine.swift */; };
 		0ADFA4F628BCCBC7008429CF /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4CB28BCCBC7008429CF /* Endpoint.swift */; };
-		0ADFA4F728BCCBC7008429CF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4CD28BCCBC7008429CF /* AppCoordinator.swift */; };
-		0ADFA4F828BCCBC7008429CF /* ProjectCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4CE28BCCBC7008429CF /* ProjectCoordinator.swift */; };
-		0ADFA4F928BCCBC7008429CF /* AbstractCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4CF28BCCBC7008429CF /* AbstractCoordinator.swift */; };
-		0ADFA4FA28BCCBC7008429CF /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4D028BCCBC7008429CF /* TabCoordinator.swift */; };
-		0ADFA4FB28BCCBC7008429CF /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4D128BCCBC7008429CF /* RootCoordinator.swift */; };
 		0ADFA4FC28BCCBC7008429CF /* PuppiesListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4D428BCCBC7008429CF /* PuppiesListDataSource.swift */; };
 		0ADFA4FD28BCCBC7008429CF /* CatsListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4D528BCCBC7008429CF /* CatsListDataSource.swift */; };
 		0ADFA4FE28BCCBC7008429CF /* KittensListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4D628BCCBC7008429CF /* KittensListDataSource.swift */; };
@@ -33,7 +31,6 @@
 		0ADFA50628BCCBC7008429CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4E228BCCBC7008429CF /* SceneDelegate.swift */; };
 		0ADFA50728BCCBC7008429CF /* LayoutConstraintHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4E428BCCBC7008429CF /* LayoutConstraintHelper.swift */; };
 		0ADFA50828BCCBC7008429CF /* CellIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4E528BCCBC7008429CF /* CellIdentifier.swift */; };
-		0ADFA50928BCCBC7008429CF /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4E628BCCBC7008429CF /* Observable.swift */; };
 		0ADFA50A28BCCBC7008429CF /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4E828BCCBC7008429CF /* Consts.swift */; };
 		0ADFA50B28BCCBC7008429CF /* DependencyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4EA28BCCBC7008429CF /* DependencyFactory.swift */; };
 		0ADFA50C28BCCBC7008429CF /* DogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4ED28BCCBC7008429CF /* DogsViewController.swift */; };
@@ -67,6 +64,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A4CF18B2947118E003B85DB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		0A4CF18F2947320D003B85DB /* CatsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsCoordinator.swift; sourceTree = "<group>"; };
+		0A7C9552294764020045EBAA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		0AD220CE28E32C0400676E6D /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		0ADFA49228BCCB78008429CF /* DXMVVMCExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DXMVVMCExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADFA4A328BCCB7A008429CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,11 +79,6 @@
 		0ADFA4C928BCCBC7008429CF /* GalleryEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryEndpoint.swift; sourceTree = "<group>"; };
 		0ADFA4CA28BCCBC7008429CF /* NetworkEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
 		0ADFA4CB28BCCBC7008429CF /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		0ADFA4CD28BCCBC7008429CF /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		0ADFA4CE28BCCBC7008429CF /* ProjectCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCoordinator.swift; sourceTree = "<group>"; };
-		0ADFA4CF28BCCBC7008429CF /* AbstractCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractCoordinator.swift; sourceTree = "<group>"; };
-		0ADFA4D028BCCBC7008429CF /* TabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
-		0ADFA4D128BCCBC7008429CF /* RootCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		0ADFA4D428BCCBC7008429CF /* PuppiesListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuppiesListDataSource.swift; sourceTree = "<group>"; };
 		0ADFA4D528BCCBC7008429CF /* CatsListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsListDataSource.swift; sourceTree = "<group>"; };
 		0ADFA4D628BCCBC7008429CF /* KittensListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KittensListDataSource.swift; sourceTree = "<group>"; };
@@ -97,7 +92,6 @@
 		0ADFA4E228BCCBC7008429CF /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0ADFA4E428BCCBC7008429CF /* LayoutConstraintHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintHelper.swift; sourceTree = "<group>"; };
 		0ADFA4E528BCCBC7008429CF /* CellIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellIdentifier.swift; sourceTree = "<group>"; };
-		0ADFA4E628BCCBC7008429CF /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		0ADFA4E828BCCBC7008429CF /* Consts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		0ADFA4EA28BCCBC7008429CF /* DependencyFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyFactory.swift; sourceTree = "<group>"; };
 		0ADFA4ED28BCCBC7008429CF /* DogsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsViewController.swift; sourceTree = "<group>"; };
@@ -233,11 +227,8 @@
 		0ADFA4CC28BCCBC7008429CF /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				0ADFA4CD28BCCBC7008429CF /* AppCoordinator.swift */,
-				0ADFA4CE28BCCBC7008429CF /* ProjectCoordinator.swift */,
-				0ADFA4CF28BCCBC7008429CF /* AbstractCoordinator.swift */,
-				0ADFA4D028BCCBC7008429CF /* TabCoordinator.swift */,
-				0ADFA4D128BCCBC7008429CF /* RootCoordinator.swift */,
+				0A4CF18B2947118E003B85DB /* Coordinator.swift */,
+				0A7C9552294764020045EBAA /* TabBarController.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -245,40 +236,18 @@
 		0ADFA4D228BCCBC7008429CF /* Commen */ = {
 			isa = PBXGroup;
 			children = (
-				0ADFA4D328BCCBC7008429CF /* DataSources */,
-				0ADFA4DA28BCCBC7008429CF /* ViewModels */,
-				0ADFA4DB28BCCBC7008429CF /* DataModels */,
+				0ADFA4DB28BCCBC7008429CF /* Models */,
 				0ADFA4DD28BCCBC7008429CF /* Views */,
 			);
 			path = Commen;
 			sourceTree = "<group>";
 		};
-		0ADFA4D328BCCBC7008429CF /* DataSources */ = {
-			isa = PBXGroup;
-			children = (
-				0ADFA4D428BCCBC7008429CF /* PuppiesListDataSource.swift */,
-				0ADFA4D528BCCBC7008429CF /* CatsListDataSource.swift */,
-				0ADFA4D628BCCBC7008429CF /* KittensListDataSource.swift */,
-				0ADFA4D728BCCBC7008429CF /* DogsGalleryListDataSource.swift */,
-				0ADFA4D828BCCBC7008429CF /* DogsListDataSource.swift */,
-				0ADFA4D928BCCBC7008429CF /* CatsGalleryListDataSource.swift */,
-			);
-			path = DataSources;
-			sourceTree = "<group>";
-		};
-		0ADFA4DA28BCCBC7008429CF /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		0ADFA4DB28BCCBC7008429CF /* DataModels */ = {
+		0ADFA4DB28BCCBC7008429CF /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				0ADFA4DC28BCCBC7008429CF /* Post.swift */,
 			);
-			path = DataModels;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		0ADFA4DD28BCCBC7008429CF /* Views */ = {
@@ -304,7 +273,6 @@
 			children = (
 				0ADFA4E428BCCBC7008429CF /* LayoutConstraintHelper.swift */,
 				0ADFA4E528BCCBC7008429CF /* CellIdentifier.swift */,
-				0ADFA4E628BCCBC7008429CF /* Observable.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -337,6 +305,9 @@
 		0ADFA4EC28BCCBC7008429CF /* Dogs */ = {
 			isa = PBXGroup;
 			children = (
+				0ADFA4D428BCCBC7008429CF /* PuppiesListDataSource.swift */,
+				0ADFA4D728BCCBC7008429CF /* DogsGalleryListDataSource.swift */,
+				0ADFA4D828BCCBC7008429CF /* DogsListDataSource.swift */,
 				0ADFA4ED28BCCBC7008429CF /* DogsViewController.swift */,
 				0ADFA4EE28BCCBC7008429CF /* DogsViewModel.swift */,
 				0ADFA4EF28BCCBC7008429CF /* DogsCoordinator.swift */,
@@ -347,8 +318,12 @@
 		0ADFA4F028BCCBC7008429CF /* Cats */ = {
 			isa = PBXGroup;
 			children = (
+				0ADFA4D928BCCBC7008429CF /* CatsGalleryListDataSource.swift */,
+				0ADFA4D628BCCBC7008429CF /* KittensListDataSource.swift */,
+				0ADFA4D528BCCBC7008429CF /* CatsListDataSource.swift */,
 				0ADFA4F128BCCBC7008429CF /* CatsViewController.swift */,
 				0ADFA4F228BCCBC7008429CF /* CatsViewModel.swift */,
+				0A4CF18F2947320D003B85DB /* CatsCoordinator.swift */,
 			);
 			path = Cats;
 			sourceTree = "<group>";
@@ -644,27 +619,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ADFA4F728BCCBC7008429CF /* AppCoordinator.swift in Sources */,
-				0ADFA4FA28BCCBC7008429CF /* TabCoordinator.swift in Sources */,
+				0A4CF1902947320D003B85DB /* CatsCoordinator.swift in Sources */,
 				0ADFA4FF28BCCBC7008429CF /* DogsGalleryListDataSource.swift in Sources */,
 				0ADFA50328BCCBC7008429CF /* ImageTableViewCell.swift in Sources */,
 				0ADFA50728BCCBC7008429CF /* LayoutConstraintHelper.swift in Sources */,
-				0ADFA4FB28BCCBC7008429CF /* RootCoordinator.swift in Sources */,
 				0ADFA50228BCCBC7008429CF /* Post.swift in Sources */,
-				0ADFA4F828BCCBC7008429CF /* ProjectCoordinator.swift in Sources */,
+				0A4CF18C2947118E003B85DB /* Coordinator.swift in Sources */,
 				0ADFA4F328BCCBC7008429CF /* ImageLoader.swift in Sources */,
 				0ADFA50628BCCBC7008429CF /* SceneDelegate.swift in Sources */,
 				0ADFA50528BCCBC7008429CF /* AppDelegate.swift in Sources */,
 				0ADFA50D28BCCBC7008429CF /* DogsViewModel.swift in Sources */,
 				0ADFA50828BCCBC7008429CF /* CellIdentifier.swift in Sources */,
 				0ADFA51028BCCBC7008429CF /* CatsViewModel.swift in Sources */,
+				0A7C9553294764020045EBAA /* TabBarController.swift in Sources */,
 				0ADFA50E28BCCBC7008429CF /* DogsCoordinator.swift in Sources */,
-				0ADFA4F928BCCBC7008429CF /* AbstractCoordinator.swift in Sources */,
 				0ADFA4FE28BCCBC7008429CF /* KittensListDataSource.swift in Sources */,
 				0ADFA4F528BCCBC7008429CF /* NetworkEngine.swift in Sources */,
 				0ADFA50C28BCCBC7008429CF /* DogsViewController.swift in Sources */,
 				0ADFA50A28BCCBC7008429CF /* Consts.swift in Sources */,
-				0ADFA50928BCCBC7008429CF /* Observable.swift in Sources */,
 				0ADFA50F28BCCBC7008429CF /* CatsViewController.swift in Sources */,
 				0ADFA50028BCCBC7008429CF /* DogsListDataSource.swift in Sources */,
 				0ADFA4F428BCCBC7008429CF /* GalleryEndpoint.swift in Sources */,

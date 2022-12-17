@@ -9,20 +9,17 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class CatsViewController: UITableViewController {
+final class CatsViewController: UITableViewController {
     
     @UsesAutoLayout
     private var loadingIndicator = UIActivityIndicatorView(style: .gray)
-    
     private var dataSource = CatsGalleryListDataSource()
-    
-    private var viewModel: CatsViewModel
-    private var coordinator: ProjectCoordinator
     
     private let disposeBag = DisposeBag()
     
-    init(coordinator: ProjectCoordinator, viewModel: CatsViewModel) {
-        self.coordinator = coordinator
+    var viewModel: CatsViewModel
+    
+    init(viewModel: CatsViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -38,12 +35,13 @@ class CatsViewController: UITableViewController {
         setupBindings()
         
         viewModel.fetchData()
-        
-        
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.nextCatsView()
     }
     
     private func createView() {
-        
         tableView.dataSource = dataSource
         
         tableView.separatorStyle = .none

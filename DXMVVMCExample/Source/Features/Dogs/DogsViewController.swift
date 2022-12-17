@@ -6,30 +6,36 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-protocol DogsViewProtocol: NSObject {
-    var viewModel: DogsViewModelProtocol? { get set }
-    func showLoadingIndicator()
-    func hideLoadingIndicator()
-    func showError(error: Error)
-    func updateDataSource(dataSources: [UITableViewDataSource])
-    func reloadListData()
-}
 
-class DogsViewController: UITableViewController, DogsViewProtocol {
+final class DogsViewController: UITableViewController {
     
     @UsesAutoLayout
     private var loadingIndicator = UIActivityIndicatorView(style: .gray)
     private var dataSource = DogsGalleryListDataSource()
     
-    var viewModel: DogsViewModelProtocol?
+    private let disposeBag = DisposeBag()
+    
+    var viewModel: DogsViewModel
+    
+    init(viewModel: DogsViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         createView()
+        setupBindings()
         
-        viewModel?.viewDidLoad()
+        viewModel.fetchData()
     }
     
     private func createView() {
@@ -47,33 +53,32 @@ class DogsViewController: UITableViewController, DogsViewProtocol {
         navigationController?.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: loadingIndicator)
     }
     
-    
+    func setupBindings() {
+        viewModel.success.drive(onNext: {[weak self] (_dataSources) in
+            if _dataSources.isEmpty {return}
+            self?.dataSource.updateDataSource(dataSources: _dataSources)
+            self?.tableView.reloadData()
+        }).disposed(by: disposeBag)
+        
+        viewModel.failure.drive(onNext: {[weak self] (_error) in
+            guard let _error = _error else {return}
+            let alert = UIAlertController(title: "Opps!", message: _error, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            self?.present(alert, animated: true, completion: nil)
+        }).disposed(by: disposeBag)
+        
+        viewModel.loading.drive(onNext: {[weak self] (_isLoading) in
+            if(_isLoading){
+                self?.loadingIndicator.startAnimating()
+            }else{
+                self?.loadingIndicator.stopAnimating()
+            }
+        }).disposed(by: disposeBag)
+    }
     
     @objc private func refresh(sender:AnyObject){
-        viewModel?.viewDidLoad()
+        viewModel.fetchData()
         tableView.refreshControl?.endRefreshing()
-    }
-    
-    func showLoadingIndicator() {
-        loadingIndicator.startAnimating()
-    }
-    
-    func hideLoadingIndicator() {
-        loadingIndicator.stopAnimating()
-    }
-    
-    func showError(error: Error) {
-        let alert = UIAlertController(title: "Opps!", message: error.localizedDescription, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
-        self.present(alert, animated: true, completion: nil)
-    }
-    
-    func updateDataSource(dataSources: [UITableViewDataSource]) {
-        dataSource.updateDataSource(dataSources: dataSources)
-    }
-    
-    func reloadListData() {
-        tableView.reloadData()
     }
     
 }

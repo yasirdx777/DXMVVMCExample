@@ -10,7 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    var coordinator: ProjectCoordinator?
+    
     
     @available(iOS 13.0, *)
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -19,14 +19,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         window = UIWindow(windowScene: scene)
         
-        let container = DependencyFactory()
-        let initialCoordinator = container.makeInitialCoordinator()
+//        let rootNC = UINavigationController()
+//        let mainCoordinator = MainCoordinator(navigationController: rootNC)
+//
+//        mainCoordinator.start()
+//        mainCoordinator.catView()
         
-        let rootNC = UINavigationController()
-        
-        initialCoordinator.start(rootNC)
-        
-        self.window?.rootViewController = rootNC
+        self.window?.rootViewController = MainTabBarController()
         self.window?.makeKeyAndVisible()
         
     }
