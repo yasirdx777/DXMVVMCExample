@@ -17,6 +17,7 @@ enum NetworkEngineError: Error {
     case Unknown
 }
 
+// sourcery: AutoMockable
 protocol NetworkEngineProtocol {
     func request<T: Codable>(endpoint: Endpoint, completion: @escaping (Result<T , NetworkEngineError>) -> ())
 }

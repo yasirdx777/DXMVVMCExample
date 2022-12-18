@@ -19,13 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         window = UIWindow(windowScene: scene)
         
-//        let rootNC = UINavigationController()
-//        let mainCoordinator = MainCoordinator(navigationController: rootNC)
-//
-//        mainCoordinator.start()
-//        mainCoordinator.catView()
-        
-        self.window?.rootViewController = MainTabBarController()
+        self.window?.rootViewController = TabBarController()
         self.window?.makeKeyAndVisible()
         
     }

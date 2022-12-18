@@ -18,13 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let container = DependencyFactory()
-        
-        let rootNC = UINavigationController()
-        
-        
-        
-        self.window?.rootViewController = rootNC
+        self.window?.rootViewController = TabBarController()
         self.window?.makeKeyAndVisible()
         
         return true

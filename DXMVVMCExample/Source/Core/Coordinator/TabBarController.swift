@@ -8,7 +8,7 @@
 import UIKit
 
 
-class MainTabBarController: UITabBarController {
+class TabBarController: UITabBarController {
     let catsCoordinator = CatsCoordinator(navigationController: UINavigationController())
     let dogsCoordinator = DogsCoordinator(navigationController: UINavigationController())
     

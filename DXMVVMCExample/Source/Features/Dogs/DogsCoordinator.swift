@@ -13,13 +13,14 @@ final class DogsCoordinator: NSObject, Coordinator, UINavigationControllerDelega
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     
+    @Injected(Container.networkEngine) private var networkEngine
+    
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
     func start() {
-        let ne: NetworkEngineProtocol = NetworkEngine()
-        let vm = DogsViewModel(coordinator: self, networkEngine: ne)
+        let vm = DogsViewModel(coordinator: self, networkEngine: networkEngine)
         let vc = DogsViewController(viewModel: vm)
         vc.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: Int.random(in: 0...1000))
         
