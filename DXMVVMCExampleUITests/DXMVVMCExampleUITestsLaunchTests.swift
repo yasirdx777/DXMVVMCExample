@@ -2,7 +2,7 @@
 //  DXMVVMCExampleUITestsLaunchTests.swift
 //  DXMVVMCExampleUITests
 //
-//  Created by iQ on 8/29/22.
+//  Created by Yasir Romaya on 8/29/22.
 //
 
 import XCTest

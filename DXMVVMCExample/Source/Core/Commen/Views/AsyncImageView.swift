@@ -1,8 +1,8 @@
 //
 //  AsyncImageView.swift
-//  DXCats
+//  DXTemplate
 //
-//  Created by iQ on 8/25/22.
+//  Created by Yasir Romaya on 8/25/22.
 //
 
 import Foundation
@@ -11,6 +11,7 @@ import UIKit
 
 class AsyncImageView: UIView {
     private var _image : UIImage?
+    private let imageLoader = Container.uiImageLoader()
     
     var image: UIImage? {
         get {
@@ -49,10 +50,10 @@ class AsyncImageView: UIView {
 
 extension AsyncImageView {
   func loadImage(at url: URL) {
-    UIImageLoader.loader.load(url, for: self)
+      imageLoader.load(url, for: self)
   }
 
   func cancelImageLoad() {
-    UIImageLoader.loader.cancel(for: self)
+      imageLoader.cancel(for: self)
   }
 }

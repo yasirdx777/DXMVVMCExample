@@ -1,12 +1,16 @@
-# DXMVVMCExample
+# DXTemplate
 
 ## Demo project demonstrates
 
-- MVVM-C
+- Uncle Bob Clean Architecture
+- MVVM
+- Coordinator
 - Factory
 - RxSwift
-- Abstracted tableview data sources composer
+- Abstracted table view data sources composer
 - URLSession network layer
 - Image loader with cache
 - Custom image view with async decoding
+- Sourcery auto generated mocks
+- Unit Test
 - Fastlane with Github actions

@@ -7,3 +7,5 @@ output:
 args:
   autoMockableTestableImports: ["DXMVVMCExample"]
   autoMockable Imports: []
+
+  # $ sourcery --config .sourcery.yml

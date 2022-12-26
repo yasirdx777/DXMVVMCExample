@@ -1,8 +1,8 @@
 //
 //  Consts.swift
-//  DXCats
+//  DXTemplate
 //
-//  Created by iQ on 8/14/22.
+//  Created by Yasir Romaya on 8/14/22.
 //
 
 import Foundation

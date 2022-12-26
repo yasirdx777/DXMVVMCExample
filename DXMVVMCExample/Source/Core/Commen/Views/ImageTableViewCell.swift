@@ -1,8 +1,8 @@
 //
-//  ImageCollectionViewCell.swift
-//  DXCats
+//  ImageTableViewCell.swift
+//  DXTemplate
 //
-//  Created by iQ on 8/13/22.
+//  Created by Yasir Romaya on 8/13/22.
 //
 
 import Foundation
