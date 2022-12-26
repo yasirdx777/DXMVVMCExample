@@ -52,7 +52,7 @@ class NetworkEngine: NetworkEngineProtocol {
     
     private func request(url: URL, _ endpoint: Endpoint) -> URLRequest {
         var request = URLRequest(url: url)
-        request.addValue("Client-ID \(accessKey)", forHTTPHeaderField: "Authorization")
+        request.addValue("Client-ID \(Environment.apiKey)", forHTTPHeaderField: "Authorization")
         request.httpMethod = endpoint.method
         return request
     }

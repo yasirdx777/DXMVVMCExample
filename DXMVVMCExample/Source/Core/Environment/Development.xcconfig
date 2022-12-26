@@ -1,0 +1,18 @@
+//
+//  Development.xcconfig
+//  DXMVVMCExample
+//
+//  Created by iq on 12/26/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-DXMVVMCExample/Pods-DXMVVMCExample.debug(development).xcconfig"
+
+//#include "Pods/Target Support Files/Pods-DXMVVMCExample/Pods-DXMVVMCExample.release(development).xcconfig"
+
+ROOT_URL = api.unsplash.com
+API_KEY = 5-wLdaPkHgMMvkpOiszN7kk2Y1_eIr5jmrxcsqkL5x8
+APP_NAME = DX Cats (dev)
+APP_BUNDLE_ID = me.yasirromaya.dxcats.dev

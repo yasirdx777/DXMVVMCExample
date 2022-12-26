@@ -25,6 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         self.window?.rootViewController = Container.appTabBarController()
         self.window?.makeKeyAndVisible()
+
     }
     
     @available(iOS 13.0, *)

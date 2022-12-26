@@ -13,4 +13,5 @@
 - Custom image view with async decoding
 - Sourcery auto generated mocks
 - Unit Test
+- Environment flavors
 - Fastlane with Github actions

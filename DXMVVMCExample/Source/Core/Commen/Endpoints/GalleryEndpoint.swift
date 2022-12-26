@@ -20,7 +20,7 @@ enum GalleryEndpoint: Endpoint {
     var baseURL: String {
         switch self {
         case .getData:
-            return unsplashBaseURl
+            return Environment.rootURL.absoluteString
         }
     }
     

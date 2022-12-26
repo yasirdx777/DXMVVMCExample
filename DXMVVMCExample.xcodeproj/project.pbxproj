@@ -34,6 +34,7 @@
 		0AD75F862959AAD50038C77E /* DogsPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD75F722959AAD50038C77E /* DogsPost.swift */; };
 		0AD75F882959AAD50038C77E /* DogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD75F772959AAD50038C77E /* DogsViewModel.swift */; };
 		0AD75F8E2959BA510038C77E /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD75F8D2959BA510038C77E /* CustomNavigationController.swift */; };
+		0AD75F9B2959DC460038C77E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD75F9A2959DC460038C77E /* Environment.swift */; };
 		0ADFA4B728BCCB7A008429CF /* DXMVVMCExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4B628BCCB7A008429CF /* DXMVVMCExampleUITests.swift */; };
 		0ADFA4B928BCCB7A008429CF /* DXMVVMCExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4B828BCCB7A008429CF /* DXMVVMCExampleUITestsLaunchTests.swift */; };
 		0ADFA4F328BCCBC7008429CF /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4C828BCCBC7008429CF /* ImageLoader.swift */; };
@@ -51,7 +52,6 @@
 		0ADFA50628BCCBC7008429CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4E228BCCBC7008429CF /* SceneDelegate.swift */; };
 		0ADFA50728BCCBC7008429CF /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4E428BCCBC7008429CF /* LayoutConstraint.swift */; };
 		0ADFA50828BCCBC7008429CF /* CellIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4E528BCCBC7008429CF /* CellIdentifier.swift */; };
-		0ADFA50A28BCCBC7008429CF /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4E828BCCBC7008429CF /* Consts.swift */; };
 		0ADFA50C28BCCBC7008429CF /* DogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4ED28BCCBC7008429CF /* DogsViewController.swift */; };
 		0ADFA50E28BCCBC7008429CF /* DogsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4EF28BCCBC7008429CF /* DogsCoordinator.swift */; };
 		0ADFA50F28BCCBC7008429CF /* CatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4F128BCCBC7008429CF /* CatsViewController.swift */; };
@@ -110,6 +110,9 @@
 		0AD75F722959AAD50038C77E /* DogsPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsPost.swift; sourceTree = "<group>"; };
 		0AD75F772959AAD50038C77E /* DogsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsViewModel.swift; sourceTree = "<group>"; };
 		0AD75F8D2959BA510038C77E /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		0AD75F982959D45F0038C77E /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		0AD75F992959D4700038C77E /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		0AD75F9A2959DC460038C77E /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		0ADFA49228BCCB78008429CF /* DXMVVMCExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DXMVVMCExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADFA4A328BCCB7A008429CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ADFA4A828BCCB7A008429CF /* DXMVVMCExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DXMVVMCExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,7 +134,6 @@
 		0ADFA4E228BCCBC7008429CF /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0ADFA4E428BCCBC7008429CF /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
 		0ADFA4E528BCCBC7008429CF /* CellIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellIdentifier.swift; sourceTree = "<group>"; };
-		0ADFA4E828BCCBC7008429CF /* Consts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		0ADFA4ED28BCCBC7008429CF /* DogsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsViewController.swift; sourceTree = "<group>"; };
 		0ADFA4EF28BCCBC7008429CF /* DogsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsCoordinator.swift; sourceTree = "<group>"; };
 		0ADFA4F128BCCBC7008429CF /* CatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsViewController.swift; sourceTree = "<group>"; };
@@ -140,13 +142,25 @@
 		0ADFA51428BCCC48008429CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0ADFA51528BCCC48008429CF /* LaunchScreenImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenImage.png; sourceTree = "<group>"; };
 		0AEA65EB295906B700DD457C /* KittensListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KittensListDataSource.swift; sourceTree = "<group>"; };
+		12A322306DBA72AF0F048D83 /* Pods-DXMVVMCExampleTests.debug(development).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXMVVMCExampleTests.debug(development).xcconfig"; path = "Target Support Files/Pods-DXMVVMCExampleTests/Pods-DXMVVMCExampleTests.debug(development).xcconfig"; sourceTree = "<group>"; };
 		252D6949CF69B4B03E8FE9D1 /* Pods-DXMVVMCExample-DXMVVMCExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXMVVMCExample-DXMVVMCExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-DXMVVMCExample-DXMVVMCExampleUITests/Pods-DXMVVMCExample-DXMVVMCExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		30070425D872822B3D57A99C /* Pods-DXMVVMCExampleTests.release(development) .xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXMVVMCExampleTests.release(development) .xcconfig"; path = "Target Support Files/Pods-DXMVVMCExampleTests/Pods-DXMVVMCExampleTests.release(development) .xcconfig"; sourceTree = "<group>"; };
+		3DE02E88BC5FB473F4115882 /* Pods-DXMVVMCExampleTests.release(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXMVVMCExampleTests.release(production).xcconfig"; path = "Target Support Files/Pods-DXMVVMCExampleTests/Pods-DXMVVMCExampleTests.release(production).xcconfig"; sourceTree = "<group>"; };
 		41FD5192B0120ED64483FAB1 /* Pods_DXMVVMCExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DXMVVMCExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CA0E1BC5C438F74224E7267 /* Pods-DXMVVMCExample.debug(development).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXMVVMCExample.debug(development).xcconfig"; path = "Target Support Files/Pods-DXMVVMCExample/Pods-DXMVVMCExample.debug(development).xcconfig"; sourceTree = "<group>"; };
+		630EC08F4206987FEB0767C7 /* Pods-DXMVVMCExampleTests.debug(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXMVVMCExampleTests.debug(production).xcconfig"; path = "Target Support Files/Pods-DXMVVMCExampleTests/Pods-DXMVVMCExampleTests.debug(production).xcconfig"; sourceTree = "<group>"; };
 		650738CA9428DAC2A119ABF0 /* Pods-DXMVVMCExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXMVVMCExampleTests.release.xcconfig"; path = "Target Support Files/Pods-DXMVVMCExampleTests/Pods-DXMVVMCExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		66024F41C3C53677CFDB5EAA /* Pods-DXMVVMCExample-DXMVVMCExampleUITests.release(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXMVVMCExample-DXMVVMCExampleUITests.release(production).xcconfig"; path = "Target Support Files/Pods-DXMVVMCExample-DXMVVMCExampleUITests/Pods-DXMVVMCExample-DXMVVMCExampleUITests.release(production).xcconfig"; sourceTree = "<group>"; };
+		6F4D0D383977121A92EB7900 /* Pods-DXMVVMCExample-DXMVVMCExampleUITests.debug(development).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXMVVMCExample-DXMVVMCExampleUITests.debug(development).xcconfig"; path = "Target Support Files/Pods-DXMVVMCExample-DXMVVMCExampleUITests/Pods-DXMVVMCExample-DXMVVMCExampleUITests.debug(development).xcconfig"; sourceTree = "<group>"; };
+		6F7EEE9E3F57E819C05BB40C /* Pods-DXMVVMCExample-DXMVVMCExampleUITests.debug(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXMVVMCExample-DXMVVMCExampleUITests.debug(production).xcconfig"; path = "Target Support Files/Pods-DXMVVMCExample-DXMVVMCExampleUITests/Pods-DXMVVMCExample-DXMVVMCExampleUITests.debug(production).xcconfig"; sourceTree = "<group>"; };
+		7F83A454FF14EF81D5DE9CEA /* Pods-DXMVVMCExample.release(development) .xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXMVVMCExample.release(development) .xcconfig"; path = "Target Support Files/Pods-DXMVVMCExample/Pods-DXMVVMCExample.release(development) .xcconfig"; sourceTree = "<group>"; };
 		8BD5B0CD20E63BA5D5D83E46 /* Pods_DXMVVMCExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DXMVVMCExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		926EB75C8114CA0CBC730753 /* Pods-DXMVVMCExample.release(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXMVVMCExample.release(production).xcconfig"; path = "Target Support Files/Pods-DXMVVMCExample/Pods-DXMVVMCExample.release(production).xcconfig"; sourceTree = "<group>"; };
 		972739985A07D1E424E6CC5E /* Pods_DXMVVMCExample_DXMVVMCExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DXMVVMCExample_DXMVVMCExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BDCCEE6E591BA629CD0A968 /* Pods-DXMVVMCExample-DXMVVMCExampleUITests.release(development) .xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXMVVMCExample-DXMVVMCExampleUITests.release(development) .xcconfig"; path = "Target Support Files/Pods-DXMVVMCExample-DXMVVMCExampleUITests/Pods-DXMVVMCExample-DXMVVMCExampleUITests.release(development) .xcconfig"; sourceTree = "<group>"; };
 		A23A4F7FD4982C893E69F78D /* Pods-DXMVVMCExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXMVVMCExample.debug.xcconfig"; path = "Target Support Files/Pods-DXMVVMCExample/Pods-DXMVVMCExample.debug.xcconfig"; sourceTree = "<group>"; };
 		A49E059DA3F665B6D6C2EFC6 /* Pods-DXMVVMCExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXMVVMCExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-DXMVVMCExampleTests/Pods-DXMVVMCExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B550BCFB6DD37625A4E308BD /* Pods-DXMVVMCExample.debug(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXMVVMCExample.debug(production).xcconfig"; path = "Target Support Files/Pods-DXMVVMCExample/Pods-DXMVVMCExample.debug(production).xcconfig"; sourceTree = "<group>"; };
 		ECC42B529B10B38364B8CB37 /* Pods-DXMVVMCExample-DXMVVMCExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXMVVMCExample-DXMVVMCExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-DXMVVMCExample-DXMVVMCExampleUITests/Pods-DXMVVMCExample-DXMVVMCExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F0DF94CB94DD04A9A66B8B20 /* Pods-DXMVVMCExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXMVVMCExample.release.xcconfig"; path = "Target Support Files/Pods-DXMVVMCExample/Pods-DXMVVMCExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -435,6 +449,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0AD75F972959D4190038C77E /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				0AD75F982959D45F0038C77E /* Production.xcconfig */,
+				0AD75F992959D4700038C77E /* Development.xcconfig */,
+				0AD75F9A2959DC460038C77E /* Environment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
 		0ADFA48928BCCB78008429CF = {
 			isa = PBXGroup;
 			children = (
@@ -496,12 +520,12 @@
 		0ADFA4C628BCCBC7008429CF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				0AD75F972959D4190038C77E /* Environment */,
 				0ADFA4E028BCCBC7008429CF /* AppDelegates */,
 				0ADFA4CC28BCCBC7008429CF /* AppCoordinator */,
 				0ADFA4E928BCCBC7008429CF /* InjectionContainer */,
 				0ADFA4E328BCCBC7008429CF /* Utils */,
 				0ADFA4D228BCCBC7008429CF /* Commen */,
-				0ADFA4E728BCCBC7008429CF /* Consts */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -562,14 +586,6 @@
 				0ADFA4E528BCCBC7008429CF /* CellIdentifier.swift */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		0ADFA4E728BCCBC7008429CF /* Consts */ = {
-			isa = PBXGroup;
-			children = (
-				0ADFA4E828BCCBC7008429CF /* Consts.swift */,
-			);
-			path = Consts;
 			sourceTree = "<group>";
 		};
 		0ADFA4E928BCCBC7008429CF /* InjectionContainer */ = {
@@ -639,6 +655,18 @@
 				ECC42B529B10B38364B8CB37 /* Pods-DXMVVMCExample-DXMVVMCExampleUITests.release.xcconfig */,
 				A49E059DA3F665B6D6C2EFC6 /* Pods-DXMVVMCExampleTests.debug.xcconfig */,
 				650738CA9428DAC2A119ABF0 /* Pods-DXMVVMCExampleTests.release.xcconfig */,
+				B550BCFB6DD37625A4E308BD /* Pods-DXMVVMCExample.debug(production).xcconfig */,
+				4CA0E1BC5C438F74224E7267 /* Pods-DXMVVMCExample.debug(development).xcconfig */,
+				926EB75C8114CA0CBC730753 /* Pods-DXMVVMCExample.release(production).xcconfig */,
+				7F83A454FF14EF81D5DE9CEA /* Pods-DXMVVMCExample.release(development) .xcconfig */,
+				6F7EEE9E3F57E819C05BB40C /* Pods-DXMVVMCExample-DXMVVMCExampleUITests.debug(production).xcconfig */,
+				6F4D0D383977121A92EB7900 /* Pods-DXMVVMCExample-DXMVVMCExampleUITests.debug(development).xcconfig */,
+				66024F41C3C53677CFDB5EAA /* Pods-DXMVVMCExample-DXMVVMCExampleUITests.release(production).xcconfig */,
+				9BDCCEE6E591BA629CD0A968 /* Pods-DXMVVMCExample-DXMVVMCExampleUITests.release(development) .xcconfig */,
+				630EC08F4206987FEB0767C7 /* Pods-DXMVVMCExampleTests.debug(production).xcconfig */,
+				12A322306DBA72AF0F048D83 /* Pods-DXMVVMCExampleTests.debug(development).xcconfig */,
+				3DE02E88BC5FB473F4115882 /* Pods-DXMVVMCExampleTests.release(production).xcconfig */,
+				30070425D872822B3D57A99C /* Pods-DXMVVMCExampleTests.release(development) .xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -929,7 +957,6 @@
 				0ADFA4F528BCCBC7008429CF /* NetworkEngine.swift in Sources */,
 				0ADFA50C28BCCBC7008429CF /* DogsViewController.swift in Sources */,
 				0AD75F8E2959BA510038C77E /* CustomNavigationController.swift in Sources */,
-				0ADFA50A28BCCBC7008429CF /* Consts.swift in Sources */,
 				0AD75F5D2959A92C0038C77E /* KittensRepositroy.swift in Sources */,
 				0AD75F4C295990A30038C77E /* CatsPost.swift in Sources */,
 				0ADFA50F28BCCBC7008429CF /* CatsViewController.swift in Sources */,
@@ -946,6 +973,7 @@
 				0ADFA4FD28BCCBC7008429CF /* CatsListDataSource.swift in Sources */,
 				0AD75F7E2959AAD50038C77E /* PuppiesRemoteDataSource.swift in Sources */,
 				0ADFA4FC28BCCBC7008429CF /* PuppiesListDataSource.swift in Sources */,
+				0AD75F9B2959DC460038C77E /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -994,8 +1022,9 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0ADFA4BA28BCCB7A008429CF /* Debug */ = {
+		0AD75F8F2959D3DF0038C77E /* Debug(development) */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AD75F992959D4700038C77E /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1052,10 +1081,83 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = "Debug(development)";
 		};
-		0ADFA4BB28BCCB7A008429CF /* Release */ = {
+		0AD75F902959D3DF0038C77E /* Debug(development) */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA0E1BC5C438F74224E7267 /* Pods-DXMVVMCExample.debug(development).xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 22;
+				DEVELOPMENT_TEAM = 9W4STM7DA3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DXMVVMCExample/Ressources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "DX Cats";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.yasirromaya.dxcats;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore me.yasirromaya.dxcats";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug(development)";
+		};
+		0AD75F912959D3DF0038C77E /* Debug(development) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12A322306DBA72AF0F048D83 /* Pods-DXMVVMCExampleTests.debug(development).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 21;
+				DEVELOPMENT_TEAM = 9W4STM7DA3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.yasirromaya.DXMVVMCExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DXMVVMCExample.app/DXMVVMCExample";
+			};
+			name = "Debug(development)";
+		};
+		0AD75F922959D3DF0038C77E /* Debug(development) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F4D0D383977121A92EB7900 /* Pods-DXMVVMCExample-DXMVVMCExampleUITests.debug(development).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 21;
+				DEVELOPMENT_TEAM = 9W4STM7DA3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.yasirromaya.DXMVVMCExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DXMVVMCExample;
+			};
+			name = "Debug(development)";
+		};
+		0AD75F932959D3F10038C77E /* Release(development)  */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AD75F992959D4700038C77E /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1106,11 +1208,11 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Release(development) ";
 		};
-		0ADFA4BD28BCCB7A008429CF /* Debug */ = {
+		0AD75F942959D3F10038C77E /* Release(development)  */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A23A4F7FD4982C893E69F78D /* Pods-DXMVVMCExample.debug.xcconfig */;
+			baseConfigurationReference = 7F83A454FF14EF81D5DE9CEA /* Pods-DXMVVMCExample.release(development) .xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1138,11 +1240,167 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = "Release(development) ";
 		};
-		0ADFA4BE28BCCB7A008429CF /* Release */ = {
+		0AD75F952959D3F10038C77E /* Release(development)  */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0DF94CB94DD04A9A66B8B20 /* Pods-DXMVVMCExample.release.xcconfig */;
+			baseConfigurationReference = 30070425D872822B3D57A99C /* Pods-DXMVVMCExampleTests.release(development) .xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 21;
+				DEVELOPMENT_TEAM = 9W4STM7DA3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.yasirromaya.DXMVVMCExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DXMVVMCExample.app/DXMVVMCExample";
+			};
+			name = "Release(development) ";
+		};
+		0AD75F962959D3F10038C77E /* Release(development)  */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BDCCEE6E591BA629CD0A968 /* Pods-DXMVVMCExample-DXMVVMCExampleUITests.release(development) .xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 21;
+				DEVELOPMENT_TEAM = 9W4STM7DA3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.yasirromaya.DXMVVMCExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DXMVVMCExample;
+			};
+			name = "Release(development) ";
+		};
+		0ADFA4BA28BCCB7A008429CF /* Debug(production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AD75F982959D45F0038C77E /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug(production)";
+		};
+		0ADFA4BB28BCCB7A008429CF /* Release(production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AD75F982959D45F0038C77E /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release(production)";
+		};
+		0ADFA4BD28BCCB7A008429CF /* Debug(production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B550BCFB6DD37625A4E308BD /* Pods-DXMVVMCExample.debug(production).xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1170,11 +1428,43 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = "Debug(production)";
 		};
-		0ADFA4C028BCCB7A008429CF /* Debug */ = {
+		0ADFA4BE28BCCB7A008429CF /* Release(production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A49E059DA3F665B6D6C2EFC6 /* Pods-DXMVVMCExampleTests.debug.xcconfig */;
+			baseConfigurationReference = 926EB75C8114CA0CBC730753 /* Pods-DXMVVMCExample.release(production).xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 22;
+				DEVELOPMENT_TEAM = 9W4STM7DA3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DXMVVMCExample/Ressources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "DX Cats";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.yasirromaya.dxcats;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore me.yasirromaya.dxcats";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release(production)";
+		};
+		0ADFA4C028BCCB7A008429CF /* Debug(production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 630EC08F4206987FEB0767C7 /* Pods-DXMVVMCExampleTests.debug(production).xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1191,11 +1481,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DXMVVMCExample.app/DXMVVMCExample";
 			};
-			name = Debug;
+			name = "Debug(production)";
 		};
-		0ADFA4C128BCCB7A008429CF /* Release */ = {
+		0ADFA4C128BCCB7A008429CF /* Release(production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 650738CA9428DAC2A119ABF0 /* Pods-DXMVVMCExampleTests.release.xcconfig */;
+			baseConfigurationReference = 3DE02E88BC5FB473F4115882 /* Pods-DXMVVMCExampleTests.release(production).xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1212,11 +1502,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DXMVVMCExample.app/DXMVVMCExample";
 			};
-			name = Release;
+			name = "Release(production)";
 		};
-		0ADFA4C328BCCB7A008429CF /* Debug */ = {
+		0ADFA4C328BCCB7A008429CF /* Debug(production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 252D6949CF69B4B03E8FE9D1 /* Pods-DXMVVMCExample-DXMVVMCExampleUITests.debug.xcconfig */;
+			baseConfigurationReference = 6F7EEE9E3F57E819C05BB40C /* Pods-DXMVVMCExample-DXMVVMCExampleUITests.debug(production).xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1231,11 +1521,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = DXMVVMCExample;
 			};
-			name = Debug;
+			name = "Debug(production)";
 		};
-		0ADFA4C428BCCB7A008429CF /* Release */ = {
+		0ADFA4C428BCCB7A008429CF /* Release(production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECC42B529B10B38364B8CB37 /* Pods-DXMVVMCExample-DXMVVMCExampleUITests.release.xcconfig */;
+			baseConfigurationReference = 66024F41C3C53677CFDB5EAA /* Pods-DXMVVMCExample-DXMVVMCExampleUITests.release(production).xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1250,7 +1540,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = DXMVVMCExample;
 			};
-			name = Release;
+			name = "Release(production)";
 		};
 /* End XCBuildConfiguration section */
 
@@ -1258,38 +1548,46 @@
 		0ADFA48D28BCCB78008429CF /* Build configuration list for PBXProject "DXMVVMCExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0ADFA4BA28BCCB7A008429CF /* Debug */,
-				0ADFA4BB28BCCB7A008429CF /* Release */,
+				0ADFA4BA28BCCB7A008429CF /* Debug(production) */,
+				0AD75F8F2959D3DF0038C77E /* Debug(development) */,
+				0ADFA4BB28BCCB7A008429CF /* Release(production) */,
+				0AD75F932959D3F10038C77E /* Release(development)  */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release(production)";
 		};
 		0ADFA4BC28BCCB7A008429CF /* Build configuration list for PBXNativeTarget "DXMVVMCExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0ADFA4BD28BCCB7A008429CF /* Debug */,
-				0ADFA4BE28BCCB7A008429CF /* Release */,
+				0ADFA4BD28BCCB7A008429CF /* Debug(production) */,
+				0AD75F902959D3DF0038C77E /* Debug(development) */,
+				0ADFA4BE28BCCB7A008429CF /* Release(production) */,
+				0AD75F942959D3F10038C77E /* Release(development)  */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release(production)";
 		};
 		0ADFA4BF28BCCB7A008429CF /* Build configuration list for PBXNativeTarget "DXMVVMCExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0ADFA4C028BCCB7A008429CF /* Debug */,
-				0ADFA4C128BCCB7A008429CF /* Release */,
+				0ADFA4C028BCCB7A008429CF /* Debug(production) */,
+				0AD75F912959D3DF0038C77E /* Debug(development) */,
+				0ADFA4C128BCCB7A008429CF /* Release(production) */,
+				0AD75F952959D3F10038C77E /* Release(development)  */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release(production)";
 		};
 		0ADFA4C228BCCB7A008429CF /* Build configuration list for PBXNativeTarget "DXMVVMCExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0ADFA4C328BCCB7A008429CF /* Debug */,
-				0ADFA4C428BCCB7A008429CF /* Release */,
+				0ADFA4C328BCCB7A008429CF /* Debug(production) */,
+				0AD75F922959D3DF0038C77E /* Debug(development) */,
+				0ADFA4C428BCCB7A008429CF /* Release(production) */,
+				0AD75F962959D3F10038C77E /* Release(development)  */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release(production)";
 		};
 /* End XCConfigurationList section */
 	};
