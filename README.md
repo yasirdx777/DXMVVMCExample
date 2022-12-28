@@ -18,4 +18,4 @@
 
 ## Project architecture diagram
 
-![alt text](https://raw.githubusercontent.com/yasirdx777/DXMVVMCExample/project_architecture.png)
+![alt text](https://raw.githubusercontent.com/yasirdx777/DXMVVMCExample/main/project_architecture.png)
