@@ -15,3 +15,7 @@
 - Unit Test
 - Environment flavors
 - Fastlane with Github actions
+
+## Project architecture diagram
+
+![alt text](https://raw.githubusercontent.com/yasirdx777/DXMVVMCExample/project_architecture.png)

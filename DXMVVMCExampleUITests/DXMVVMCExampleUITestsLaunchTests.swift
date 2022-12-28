@@ -1,6 +1,6 @@
 //
 //  DXMVVMCExampleUITestsLaunchTests.swift
-//  DXMVVMCExampleUITests
+//  DXTemplateUITests
 //
 //  Created by Yasir Romaya on 8/29/22.
 //

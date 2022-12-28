@@ -1,8 +1,8 @@
 //
 //  SnapshotHelper.swift
-//  Example
+//  DXTemplateUITests
 //
-//  Created by Felix Krause on 10/8/15.
+//  Created by Yasir Romaya on 10/8/22.
 //
 
 // -----------------------------------------------------

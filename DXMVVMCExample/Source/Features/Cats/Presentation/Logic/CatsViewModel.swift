@@ -40,8 +40,6 @@ final class CatsViewModel {
     func fetchData(){
         _loading.accept(true)
         
-        
-        
         let catsRequest = catsUseCase.execute().asObservable()
         let kittensRequest = kittensUseCase.execute().asObservable()
         
@@ -49,8 +47,10 @@ final class CatsViewModel {
         
         combinedRequests.subscribe(onSuccess: { (catsResponse, kittensResponse) in
             self._success.accept([catsResponse, kittensResponse])
+            self._loading.accept(false)
         }, onFailure: { error in
             self._failure.accept(error.localizedDescription)
+            self._loading.accept(false)
         }).disposed(by: disposeBag)
     }
 }

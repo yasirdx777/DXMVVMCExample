@@ -47,8 +47,10 @@ final class DogsViewModel {
         
         combinedRequests.subscribe(onSuccess: { (dogsResponse, puppiesResponse) in
             self._success.accept([dogsResponse, puppiesResponse])
+            self._loading.accept(false)
         }, onFailure: { error in
             self._failure.accept(error.localizedDescription)
+            self._loading.accept(false)
         }).disposed(by: disposeBag)
     }
 }

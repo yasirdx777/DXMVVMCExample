@@ -579,11 +579,11 @@
 		0ADFA4E328BCCBC7008429CF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				0ACDC003294F708D0020226F /* Factory.swift */,
 				0ADFA4CA28BCCBC7008429CF /* NetworkEngine.swift */,
 				0ADFA4C828BCCBC7008429CF /* ImageLoader.swift */,
 				0ADFA4E428BCCBC7008429CF /* LayoutConstraint.swift */,
 				0ADFA4E528BCCBC7008429CF /* CellIdentifier.swift */,
+				0ACDC003294F708D0020226F /* Factory.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";

@@ -8,7 +8,7 @@
 import Foundation
 
 
-// Core Feature
+// Core
 extension Container {
     static let networkEngine = Factory<NetworkEngineProtocol> { NetworkEngine() as NetworkEngineProtocol}
     
