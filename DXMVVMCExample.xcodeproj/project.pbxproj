@@ -39,7 +39,7 @@
 		0ADFA4B928BCCB7A008429CF /* DXMVVMCExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4B828BCCB7A008429CF /* DXMVVMCExampleUITestsLaunchTests.swift */; };
 		0ADFA4F328BCCBC7008429CF /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4C828BCCBC7008429CF /* ImageLoader.swift */; };
 		0ADFA4F428BCCBC7008429CF /* GalleryEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4C928BCCBC7008429CF /* GalleryEndpoint.swift */; };
-		0ADFA4F528BCCBC7008429CF /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4CA28BCCBC7008429CF /* NetworkEngine.swift */; };
+		0ADFA4F528BCCBC7008429CF /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4CA28BCCBC7008429CF /* RestClient.swift */; };
 		0ADFA4FC28BCCBC7008429CF /* PuppiesListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4D428BCCBC7008429CF /* PuppiesListDataSource.swift */; };
 		0ADFA4FD28BCCBC7008429CF /* CatsListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4D528BCCBC7008429CF /* CatsListDataSource.swift */; };
 		0ADFA4FF28BCCBC7008429CF /* DogsGalleryListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4D728BCCBC7008429CF /* DogsGalleryListDataSource.swift */; };
@@ -50,7 +50,7 @@
 		0ADFA50428BCCBC7008429CF /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4DF28BCCBC7008429CF /* AsyncImageView.swift */; };
 		0ADFA50528BCCBC7008429CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4E128BCCBC7008429CF /* AppDelegate.swift */; };
 		0ADFA50628BCCBC7008429CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4E228BCCBC7008429CF /* SceneDelegate.swift */; };
-		0ADFA50728BCCBC7008429CF /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4E428BCCBC7008429CF /* LayoutConstraint.swift */; };
+		0ADFA50728BCCBC7008429CF /* LayoutConstraintHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4E428BCCBC7008429CF /* LayoutConstraintHelper.swift */; };
 		0ADFA50828BCCBC7008429CF /* CellIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4E528BCCBC7008429CF /* CellIdentifier.swift */; };
 		0ADFA50C28BCCBC7008429CF /* DogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4ED28BCCBC7008429CF /* DogsViewController.swift */; };
 		0ADFA50E28BCCBC7008429CF /* DogsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFA4EF28BCCBC7008429CF /* DogsCoordinator.swift */; };
@@ -121,7 +121,7 @@
 		0ADFA4B828BCCB7A008429CF /* DXMVVMCExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DXMVVMCExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0ADFA4C828BCCBC7008429CF /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		0ADFA4C928BCCBC7008429CF /* GalleryEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryEndpoint.swift; sourceTree = "<group>"; };
-		0ADFA4CA28BCCBC7008429CF /* NetworkEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
+		0ADFA4CA28BCCBC7008429CF /* RestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
 		0ADFA4D428BCCBC7008429CF /* PuppiesListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuppiesListDataSource.swift; sourceTree = "<group>"; };
 		0ADFA4D528BCCBC7008429CF /* CatsListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsListDataSource.swift; sourceTree = "<group>"; };
 		0ADFA4D728BCCBC7008429CF /* DogsGalleryListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsGalleryListDataSource.swift; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 		0ADFA4DF28BCCBC7008429CF /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		0ADFA4E128BCCBC7008429CF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ADFA4E228BCCBC7008429CF /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0ADFA4E428BCCBC7008429CF /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		0ADFA4E428BCCBC7008429CF /* LayoutConstraintHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintHelper.swift; sourceTree = "<group>"; };
 		0ADFA4E528BCCBC7008429CF /* CellIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellIdentifier.swift; sourceTree = "<group>"; };
 		0ADFA4ED28BCCBC7008429CF /* DogsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsViewController.swift; sourceTree = "<group>"; };
 		0ADFA4EF28BCCBC7008429CF /* DogsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsCoordinator.swift; sourceTree = "<group>"; };
@@ -579,9 +579,9 @@
 		0ADFA4E328BCCBC7008429CF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				0ADFA4CA28BCCBC7008429CF /* NetworkEngine.swift */,
+				0ADFA4CA28BCCBC7008429CF /* RestClient.swift */,
 				0ADFA4C828BCCBC7008429CF /* ImageLoader.swift */,
-				0ADFA4E428BCCBC7008429CF /* LayoutConstraint.swift */,
+				0ADFA4E428BCCBC7008429CF /* LayoutConstraintHelper.swift */,
 				0ADFA4E528BCCBC7008429CF /* CellIdentifier.swift */,
 				0ACDC003294F708D0020226F /* Factory.swift */,
 			);
@@ -935,7 +935,7 @@
 				0ADFA4FF28BCCBC7008429CF /* DogsGalleryListDataSource.swift in Sources */,
 				0ADFA50328BCCBC7008429CF /* ImageTableViewCell.swift in Sources */,
 				0AD75F4E2959918B0038C77E /* CatsRemoteDataSource.swift in Sources */,
-				0ADFA50728BCCBC7008429CF /* LayoutConstraint.swift in Sources */,
+				0ADFA50728BCCBC7008429CF /* LayoutConstraintHelper.swift in Sources */,
 				0AD75F502959930E0038C77E /* CatsRepositroyImpl.swift in Sources */,
 				0ADFA50228BCCBC7008429CF /* PostModel.swift in Sources */,
 				0A4CF18C2947118E003B85DB /* Coordinator.swift in Sources */,
@@ -954,7 +954,7 @@
 				0AD75F862959AAD50038C77E /* DogsPost.swift in Sources */,
 				0ADFA50E28BCCBC7008429CF /* DogsCoordinator.swift in Sources */,
 				0AD75F5229599FEF0038C77E /* CatsRepositroy.swift in Sources */,
-				0ADFA4F528BCCBC7008429CF /* NetworkEngine.swift in Sources */,
+				0ADFA4F528BCCBC7008429CF /* RestClient.swift in Sources */,
 				0ADFA50C28BCCBC7008429CF /* DogsViewController.swift in Sources */,
 				0AD75F8E2959BA510038C77E /* CustomNavigationController.swift in Sources */,
 				0AD75F5D2959A92C0038C77E /* KittensRepositroy.swift in Sources */,
@@ -1105,7 +1105,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.2;
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = me.yasirromaya.dxcats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore me.yasirromaya.dxcats";
@@ -1232,7 +1232,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.2;
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = me.yasirromaya.dxcats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore me.yasirromaya.dxcats";
@@ -1420,7 +1420,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.2;
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = me.yasirromaya.dxcats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore me.yasirromaya.dxcats";
@@ -1452,7 +1452,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.2;
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = me.yasirromaya.dxcats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore me.yasirromaya.dxcats";

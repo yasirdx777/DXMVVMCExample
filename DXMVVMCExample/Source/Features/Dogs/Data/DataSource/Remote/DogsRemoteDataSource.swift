@@ -15,14 +15,14 @@ protocol DogsRemoteDataSource {
 
 class DogsRemoteDataSourceImpl: DogsRemoteDataSource {
     
-    private var networkEngine: NetworkEngineProtocol
+    private var restClient: RestClientProtocol
     
-    init(networkEngine: NetworkEngineProtocol) {
-        self.networkEngine = networkEngine
+    init(restClient: RestClientProtocol) {
+        self.restClient = restClient
     }
     
     
     func getDogsData() -> Single<PostsModel> {
-      networkEngine.request(type: PostsModel.self , endpoint: GalleryEndpoint.getData(query: "Dogs"))
+      restClient.request(type: PostsModel.self , endpoint: GalleryEndpoint.getData(query: "Dogs"))
     }
 }

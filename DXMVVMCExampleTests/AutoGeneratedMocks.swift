@@ -311,7 +311,7 @@ class KittensUseCaseMock: KittensUseCase {
     }
 
 }
-class NetworkEngineProtocolMock: NetworkEngineProtocol {
+class RestClientProtocolMock: RestClientProtocol {
 
 
 

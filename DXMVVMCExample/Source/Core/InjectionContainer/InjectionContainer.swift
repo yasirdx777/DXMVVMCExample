@@ -10,7 +10,7 @@ import Foundation
 
 // Core
 extension Container {
-    static let networkEngine = Factory<NetworkEngineProtocol> { NetworkEngine() as NetworkEngineProtocol}
+    static let restClient = Factory<RestClientProtocol> { RestClient() as RestClientProtocol}
     
     static let imageLoader = Factory<ImageLoader> { ImageLoaderImpl() as ImageLoader}
     static let uiImageLoader = Factory<UIImageLoader> { UIImageLoaderImpl(imageLoader: Container.imageLoader()) as UIImageLoader}
@@ -22,8 +22,8 @@ extension Container {
 
 // Cats Feature
 extension Container {
-    static let catsRemoteDataSource = Factory<CatsRemoteDataSource> { CatsRemoteDataSourceImpl(networkEngine: Container.networkEngine()) as CatsRemoteDataSource}
-    static let kittensRemoteDataSource = Factory<KittensRemoteDataSource> { KittensRemoteDataSourceImpl(networkEngine: Container.networkEngine()) as KittensRemoteDataSource}
+    static let catsRemoteDataSource = Factory<CatsRemoteDataSource> { CatsRemoteDataSourceImpl(restClient: Container.restClient()) as CatsRemoteDataSource}
+    static let kittensRemoteDataSource = Factory<KittensRemoteDataSource> { KittensRemoteDataSourceImpl(restClient: Container.restClient()) as KittensRemoteDataSource}
     
     static let catsRepositroy = Factory<CatsRepositroy> { CatsRepositroyImpl(catsRemoteDataSource: Container.catsRemoteDataSource()) as CatsRepositroy}
     static let kittensRepositroy = Factory<KittensRepositroy> { KittensRepositroyImpl(kittensRemoteDataSource: Container.kittensRemoteDataSource()) as KittensRepositroy}
@@ -41,8 +41,8 @@ extension Container {
 
 // Dogs Feature
 extension Container {
-    static let dogsRemoteDataSource = Factory<DogsRemoteDataSource> { DogsRemoteDataSourceImpl(networkEngine: Container.networkEngine()) as DogsRemoteDataSource}
-    static let puppiesRemoteDataSource = Factory<PuppiesRemoteDataSource> { PuppiesRemoteDataSourceImpl(networkEngine: Container.networkEngine()) as PuppiesRemoteDataSource}
+    static let dogsRemoteDataSource = Factory<DogsRemoteDataSource> { DogsRemoteDataSourceImpl(restClient: Container.restClient()) as DogsRemoteDataSource}
+    static let puppiesRemoteDataSource = Factory<PuppiesRemoteDataSource> { PuppiesRemoteDataSourceImpl(restClient: Container.restClient()) as PuppiesRemoteDataSource}
     
     static let dogsRepositroy = Factory<DogsRepositroy> { DogsRepositroyImpl(dogsRemoteDataSource: Container.dogsRemoteDataSource()) as DogsRepositroy}
     static let puppiesRepositroy = Factory<PuppiesRepositroy> { PuppiesRepositroyImpl(puppiesRemoteDataSource: Container.puppiesRemoteDataSource()) as PuppiesRepositroy}

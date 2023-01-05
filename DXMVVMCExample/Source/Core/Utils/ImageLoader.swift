@@ -81,6 +81,9 @@ class UIImageLoaderImpl: UIImageLoader {
     }
     
     func load(_ url: URL, for imageView: AsyncImageView) {
+        
+        imageView.activityIndicator.startAnimating()
+        
         let token = imageLoader.loadImage(url) { result in
             
             defer { self.uuidMap.removeValue(forKey: imageView) }
@@ -89,7 +92,14 @@ class UIImageLoaderImpl: UIImageLoader {
                 let image = try result.get()
                 
                 DispatchQueue.main.async {
-                    imageView.image = image
+                    
+                    imageView.activityIndicator.stopAnimating()
+                    
+                    UIView.transition(with: imageView,
+                                      duration: 0.75,
+                                      options: .transitionCrossDissolve,
+                                      animations: { imageView.image = image },
+                                      completion: nil)
                 }
             } catch let error {
                 print(error.localizedDescription)

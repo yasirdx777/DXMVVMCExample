@@ -1,5 +1,5 @@
 //
-//  NetworkEngine.swift
+//  RestClient.swift
 //  DXTemplate
 //
 //  Created by Yasir Romaya on 8/12/22.
@@ -17,7 +17,7 @@ protocol Endpoint {
     var method: String { get }
 }
 
-enum NetworkEngineError: Error {
+enum RestClientError: Error {
     case badResponse(URLResponse?)
     case badData
     case badLocalUrl
@@ -28,17 +28,16 @@ enum NetworkEngineError: Error {
 }
 
 // sourcery: AutoMockable
-protocol NetworkEngineProtocol {
+protocol RestClientProtocol {
     func request<T: Codable>(type: T.Type, endpoint: Endpoint) -> Single<T>
 }
 
-class NetworkEngine: NetworkEngineProtocol {
+class RestClient: RestClientProtocol {
     
-    let session: URLSession
+    private let session: URLSession
     
-    init() {
-        let config = URLSessionConfiguration.default
-        session = URLSession(configuration: config)
+    init(session: URLSession = URLSession(configuration: URLSessionConfiguration.default)) {
+        self.session = session
     }
     
     private func components(_ endpoint: Endpoint) -> URLComponents {
@@ -67,18 +66,18 @@ class NetworkEngine: NetworkEngineProtocol {
             let dataTask = self.session.dataTask(with: urlRequest) { data, response, error in
                 
                 if let error = error {
-                    single(.failure(NetworkEngineError.Unknown))
+                    single(.failure(RestClientError.Unknown))
                     print(error.localizedDescription)
                     return
                 }
                 
                 guard let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) else {
-                    single(.failure(NetworkEngineError.badResponse(response)))
+                    single(.failure(RestClientError.badResponse(response)))
                     return
                 }
                 
                 guard let data = data else {
-                    single(.failure(NetworkEngineError.badData))
+                    single(.failure(RestClientError.badData))
                     return
                 }
                 
@@ -86,7 +85,7 @@ class NetworkEngine: NetworkEngineProtocol {
                     let response = try JSONDecoder().decode(T.self, from: data)
                     single(.success(response))
                 } catch let error{
-                    single(.failure(NetworkEngineError.decode))
+                    single(.failure(RestClientError.decode))
                     print(error.localizedDescription)
                 }
             }

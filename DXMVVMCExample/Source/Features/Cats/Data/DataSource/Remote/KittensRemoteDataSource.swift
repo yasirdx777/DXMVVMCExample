@@ -15,14 +15,14 @@ protocol KittensRemoteDataSource {
 
 class KittensRemoteDataSourceImpl: KittensRemoteDataSource {
     
-    private var networkEngine: NetworkEngineProtocol
+    private var restClient: RestClientProtocol
     
-    init(networkEngine: NetworkEngineProtocol) {
-        self.networkEngine = networkEngine
+    init(restClient: RestClientProtocol) {
+        self.restClient = restClient
     }
     
     
     func getKittensData() -> Single<PostsModel> {
-      networkEngine.request(type: PostsModel.self , endpoint: GalleryEndpoint.getData(query: "Kittens"))
+      restClient.request(type: PostsModel.self , endpoint: GalleryEndpoint.getData(query: "Kittens"))
     }
 }

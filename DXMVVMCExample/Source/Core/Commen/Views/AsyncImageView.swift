@@ -13,6 +13,42 @@ class AsyncImageView: UIView {
     private var _image : UIImage?
     private let imageLoader = Container.uiImageLoader()
     
+    lazy var activityIndicator: UIActivityIndicatorView = {
+        @UsesAutoLayout
+        var activityIndicator = UIActivityIndicatorView()
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.color = UIColor.black
+        return activityIndicator
+    }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        addSubview(activityIndicator)
+        
+        let centerX = NSLayoutConstraint(item: self,
+                                         attribute: .centerX,
+                                         relatedBy: .equal,
+                                         toItem: activityIndicator,
+                                         attribute: .centerX,
+                                         multiplier: 1,
+                                         constant: 0)
+        
+        let centerY = NSLayoutConstraint(item: self,
+                                         attribute: .centerY,
+                                         relatedBy: .equal,
+                                         toItem: activityIndicator,
+                                         attribute: .centerY,
+                                         multiplier: 1,
+                                         constant: 0)
+        
+        self.addConstraints([centerX, centerY])
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     var image: UIImage? {
         get {
             return _image
