@@ -10,7 +10,7 @@ import Foundation
 
 // Core
 extension Container {
-    static let restClient = Factory<RestClientProtocol> { RestClient() as RestClientProtocol}
+    static let restClient = Factory<RestClientProtocol> { RestClient() as RestClientProtocol }
     
     static let imageLoader = Factory<ImageLoader> { ImageLoaderImpl() as ImageLoader}
     static let uiImageLoader = Factory<UIImageLoader> { UIImageLoaderImpl(imageLoader: Container.imageLoader()) as UIImageLoader}

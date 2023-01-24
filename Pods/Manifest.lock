@@ -1,4 +1,6 @@
 PODS:
+  - Nimble (10.0.0)
+  - Quick (5.0.1)
   - RxBlocking (6.5.0):
     - RxSwift (= 6.5.0)
   - RxCocoa (6.5.0):
@@ -11,6 +13,8 @@ PODS:
     - RxSwift (= 6.5.0)
 
 DEPENDENCIES:
+  - Nimble
+  - Quick
   - RxBlocking (= 6.5.0)
   - RxCocoa (= 6.5.0)
   - RxSwift (= 6.5.0)
@@ -18,6 +22,8 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Nimble
+    - Quick
     - RxBlocking
     - RxCocoa
     - RxRelay
@@ -25,12 +31,14 @@ SPEC REPOS:
     - RxTest
 
 SPEC CHECKSUMS:
+  Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
+  Quick: 749aa754fd1e7d984f2000fe051e18a3a9809179
   RxBlocking: 04b5fd28bb5ea49f7d64b80db8bbfe50d9cc1c7d
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   RxTest: eb2d23adefc5a5ebf5779c7792fa3edfe6ebcc17
 
-PODFILE CHECKSUM: 5533ca1f427077c551fbba614a33e250574cfeb5
+PODFILE CHECKSUM: a14d22849fa7455531bbee07f5e4544ae7b67765
 
 COCOAPODS: 1.11.3

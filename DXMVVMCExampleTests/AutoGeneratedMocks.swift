@@ -14,7 +14,6 @@ import AppKit
 import RxSwift
 import RxCocoa
 
-
 @testable import DXMVVMCExample
 
 
@@ -198,6 +197,34 @@ class DogsUseCaseMock: DogsUseCase {
     }
 
 }
+class EndpointMock: Endpoint {
+    
+    
+    var scheme: String {
+        get { return underlyingScheme }
+        set(value) { underlyingScheme = value }
+    }
+    var underlyingScheme: String = "https"
+    var baseURL: String {
+        get { return underlyingBaseURL }
+        set(value) { underlyingBaseURL = value }
+    }
+    var underlyingBaseURL: String = "google.com"
+    var path: String {
+        get { return underlyingPath }
+        set(value) { underlyingPath = value }
+    }
+    var underlyingPath: String = ""
+    var parameters: [URLQueryItem] = []
+    var method: String {
+        get { return underlyingMethod }
+        set(value) { underlyingMethod = value }
+    }
+    var underlyingMethod: String = "GET"
+    
+}
+
+
 class ImageLoaderMock: ImageLoader {
 
 
@@ -307,33 +334,6 @@ class KittensUseCaseMock: KittensUseCase {
             return executeClosure()
         } else {
             return executeReturnValue
-        }
-    }
-
-}
-class RestClientProtocolMock: RestClientProtocol {
-
-
-
-    //MARK: - request<T: Codable>
-
-    var requestTypeEndpointCallsCount = 0
-    var requestTypeEndpointCalled: Bool {
-        return requestTypeEndpointCallsCount > 0
-    }
-    var requestTypeEndpointReceivedArguments: (type: T.Type, endpoint: Endpoint)?
-    var requestTypeEndpointReceivedInvocations: [(type: T.Type, endpoint: Endpoint)] = []
-    var requestTypeEndpointReturnValue: Single<T>!
-    var requestTypeEndpointClosure: ((T.Type, Endpoint) -> Single<T>)?
-
-    func request<T: Codable>(type: T.Type, endpoint: Endpoint) -> Single<T> {
-        requestTypeEndpointCallsCount += 1
-        requestTypeEndpointReceivedArguments = (type: type, endpoint: endpoint)
-        requestTypeEndpointReceivedInvocations.append((type: type, endpoint: endpoint))
-        if let requestTypeEndpointClosure = requestTypeEndpointClosure {
-            return requestTypeEndpointClosure(type, endpoint)
-        } else {
-            return requestTypeEndpointReturnValue
         }
     }
 

@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-
+// sourcery: AutoMockable
 protocol Endpoint {
     var scheme: String { get }
     var baseURL: String { get }
@@ -17,17 +17,6 @@ protocol Endpoint {
     var method: String { get }
 }
 
-enum RestClientError: Error {
-    case badResponse(URLResponse?)
-    case badData
-    case badLocalUrl
-    case badRemoteUrl
-    case decode
-    case cacheImage
-    case Unknown
-}
-
-// sourcery: AutoMockable
 protocol RestClientProtocol {
     func request<T: Codable>(type: T.Type, endpoint: Endpoint) -> Single<T>
 }
@@ -36,7 +25,7 @@ class RestClient: RestClientProtocol {
     
     private let session: URLSession
     
-    init(session: URLSession = URLSession(configuration: URLSessionConfiguration.default)) {
+    init(session: URLSession = URLSession.shared) {
         self.session = session
     }
     
@@ -66,18 +55,18 @@ class RestClient: RestClientProtocol {
             let dataTask = self.session.dataTask(with: urlRequest) { data, response, error in
                 
                 if let error = error {
-                    single(.failure(RestClientError.Unknown))
+                    single(.failure(error))
                     print(error.localizedDescription)
                     return
                 }
                 
                 guard let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) else {
-                    single(.failure(RestClientError.badResponse(response)))
+                    single(.failure(error!))
                     return
                 }
                 
                 guard let data = data else {
-                    single(.failure(RestClientError.badData))
+                    single(.failure(error!))
                     return
                 }
                 
@@ -85,13 +74,13 @@ class RestClient: RestClientProtocol {
                     let response = try JSONDecoder().decode(T.self, from: data)
                     single(.success(response))
                 } catch let error{
-                    single(.failure(RestClientError.decode))
+                    single(.failure(error))
                     print(error.localizedDescription)
                 }
             }
             
             dataTask.resume()
-           
+            
             return Disposables.create {
                 dataTask.cancel()
             }
@@ -99,4 +88,3 @@ class RestClient: RestClientProtocol {
     }
     
 }
-
